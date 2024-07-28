@@ -7,7 +7,6 @@ TARGET_USER = 'seguido'
 YOUR_USERNAME = 'seu_usuario'
 YOUR_PASSWORD = 'sua_senha'
 
-# Instância do Instaloader
 L = instaloader.Instaloader()
 
 def login():
@@ -37,7 +36,7 @@ login()
 
 check_user()
 
-schedule.every(20).minutes.do(check_user)
+schedule.every(30).minutes.do(check_user)
 
 print('Iniciando monitoramento...')
 while True:
